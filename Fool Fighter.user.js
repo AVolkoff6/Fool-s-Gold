@@ -19,7 +19,7 @@
         var xpath = "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[2]/div[5]/div[1]/div[2]/ytd-video-primary-info-renderer/div/div/div[1]/div[2]/yt-formatted-string"
         var dateElement = getElementByXpath(xpath);
         var date = dateElement.innerHTML;
-        var isAprilFirst = date.indexOf("Apr 1")!==-1;
+        var isAprilFirst = date.indexOf("Apr 1,")!==-1;
         if(isAprilFirst)
         {
             dateElement.style.color = "lightgreen";
